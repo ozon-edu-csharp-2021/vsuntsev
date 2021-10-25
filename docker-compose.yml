@@ -1,0 +1,28 @@
+version: '3.8'
+
+services: 
+  merchandise-service:
+      image: 'merchandise-service'
+      hostname: merchandise-service
+      ports:
+        - "8080:80"  
+  supply-service:
+      image: 'supply-service'
+      hostname: supply-service
+      ports:
+        - "8081:80"
+  emailing-service:
+      image: 'emailing-service'
+      hostname: emailing-service
+      ports:
+        - "8082:80"
+  employees-service:
+      image: 'employees-service'
+      hostname: employees-service
+      ports:
+        - "8083:80"
+  stock-api:
+      image: 'stock-api'
+      hostname: stock-api
+      ports:
+        - "8084:80"
